@@ -1,30 +1,66 @@
 ﻿#header {
     background-repeat: no-repeat;
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 0px;
     width: 1024px;
     height: 150px;
-    z-index: 1;
-    padding: 2px;
     margin-left: auto;
     margin-right: auto;
+    z-index: 1;
+    padding: 2px;
     font-family: Arial, Helvetica, sans-serif;
     background-repeat: no-repeat;
     background-image: url('images/bannercut1.jpg');
 }
-
+#horiznav {
+    background: #0052A4;
+    width: 1024px;
+    height: 50px;
+    top: 150px;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+#allPage {
+    top: 200px;
+    left: 0px;
+    width: 1024px;
+    height: 468px;
+    z-index: 3;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sidenav {
+    top: 200px;
+    left: 0px;
+    width: 250px;
+    height: 468px;
+    z-index: inherit;
+    flex: 0 0 25%;
+}
+#content {
+    top: 200px;
+    left: 250px;
+    width: 774px;
+    height: 468px;
+    z-index: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+}
 #footer {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
     background: #000000;
     width: 1024px;
     height: 100px;
     top: 668px;
     left: 0px;
-    z-index: 4;
+    z-index: 6;
     color: #FFFFFF;
 }
 
@@ -40,48 +76,6 @@
 
 #copy {
     font-size: x-small;
-}
-
-#content {
-    position: absolute;
-    width: 774px;
-    height: 468px;
-    top: 200px;
-    left: 250px;
-    z-index: 3;
-}
-
-#sidenav {
-    position: absolute;
-    top: 200px;
-    left: 0px;
-    width: 250px;
-    height: 468px;
-    z-index: 2;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#horiznav {
-    background: #0052A4;
-    position: absolute;
-    width: 1024px;
-    height: 50px;
-    top: 150px;
-    left: 0px;
-    z-index: 5;
-}
-
-#mainPage {
-    position: absolute;
-    top: 150px;
-    left: 100px;
-    width: 780px;
-    height: 400px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
 }
 
 .button {
